@@ -5,7 +5,23 @@
 @import './base/var';
 @import './base/mixins';
 
+// Blocks
+@import './blocks/header';
+
+@import './components/index-components';
+
 
 body {
-    font-family: $font-inter;
+  font-family: $font-inter;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .container {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  
 }

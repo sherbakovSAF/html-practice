@@ -1,0 +1,14 @@
+.btn {
+    background: $yellow-300;
+    border-radius: $rounded-xl;
+    padding: 22px 36px;
+    font-family: $font-dewi-expanded;
+    font-weight: $weight-extra-bold;
+    font-size: $text-base;
+    transition: .2s ease-in background;
+
+    &:hover {
+        background: $yellow-200;
+
+    }
+}
