@@ -54,7 +54,7 @@
       align-items: center;
       overflow: hidden;
 
-      h3{
+      h3 {
         font-weight: $weight-extra-bold;
         font-size: 24px;
         line-height: 120%;
@@ -108,6 +108,24 @@
     }
   }
 
- 
+  &_services {
+    background-color: $bg-tertiary;
+    padding: 305px 0 130px 0;
+
+    &_title {
+      margin-bottom: 54px;
+    }
+
+    &_description {
+      margin-bottom: 70px;
+    }
+
+    &_items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 35px;
+      row-gap: 38px;
+    }
+  }
 
 }
