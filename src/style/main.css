@@ -241,6 +241,22 @@ input[type=file] {
   opacity: 0.5;
   z-index: 1;
 }
+.main_services {
+  background-color: #EEEEEE;
+  padding: 305px 0 130px 0;
+}
+.main_services_title {
+  margin-bottom: 54px;
+}
+.main_services_description {
+  margin-bottom: 70px;
+}
+.main_services_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 35px;
+  row-gap: 38px;
+}
 
 .info-list {
   display: flex;
@@ -318,6 +334,31 @@ input[type=file] {
   transform: translateY(-50%);
   display: inline-block;
   margin-left: 15px;
+}
+
+.service-card img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 210px;
+}
+.service-card figcaption {
+  margin-top: 20px;
+  text-align: center;
+}
+.service-card figcaption h3 {
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "RFDewi", sans-serif;
+  margin-bottom: 25px;
+}
+.service-card figcaption p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 body {
