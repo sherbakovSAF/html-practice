@@ -1,42 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style/main.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="header">
-    <ul class="info-list container">
-      <li class="info-list_secondary">
-        <a href="tel:+70253431696">
-          <span>+7 925 343 16 96</span>
-          <span>Перезвоните мне</span>
-        </a>
-      </li>
-      <li class="info-list_primary">
-        <a>
-          <span>FAMFACTORY</span>
-          <span>Швейная фабрика</span>
-        </a>
-      </li>
-      <li class="info-list_secondary">
-        <a href="mailto:MAIL@FAMFACTORY.RU">
-          <span>MAIL@FAMFACTORY.RU</span>
-          <span>Наша почта</span>
-        </a>
-      </li>
-    </ul>
-    <div class="header_main">
-      <h1>Сделано <br/>в Санкт-Петербурге</h1>
-      <button class="btn">Отправить запрос</button>
-    </div>
-  </header>
-  <main>Main</main>
-  <footer>Footer</footer>
-</body>
-
+  <body>
+    <header class="header" id="header">
+      <ul class="info-list container">
+        <li class="info-list_secondary">
+          <a
+            href="tel:+70253431696"
+            aria-label="Позвоните по номеру +7 925 343 16 96"
+          >
+            <span>+7 925 343 16 96</span>
+            <span>Перезвоните мне</span>
+          </a>
+        </li>
+        <li class="info-list_primary">
+          <a href="#header" aria-label="Информация о компании FAMFACTORY">
+            <span>FAMFACTORY</span>
+            <span>Швейная фабрика</span>
+          </a>
+        </li>
+        <li class="info-list_secondary">
+          <a
+            href="mailto:MAIL@FAMFACTORY.RU"
+            aria-label="Отправить письмо на MAIL@FAMFACTORY.RU"
+          >
+            <span>MAIL@FAMFACTORY.RU</span>
+            <span>Наша почта</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header_main">
+        <h1>Сделано <br />в Санкт-Петербурге</h1>
+        <button class="btn">Отправить запрос</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main_products container">
+        <h2 class="main_products_title section-title">
+          Современный <br />
+          мерчендайз для бизнеса
+        </h2>
+        <p class="main_products_description section-description">
+          Над реализацией проектов по разработке и производству одеждыи
+          аксессураов трудится огромная команда профессионалов, поэтому мы можем
+          создавать проекты любой сложности и масштабов под ключ или воплотить
+          конкретные задачи на любом из этапов производства.
+        </p>
+        <div class="main_products_items">
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-1.jpg" alt="" />
+              <figcaption>
+                <span>Худи</span>
+                <span>от 1650 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-2.jpg" alt="" />
+              <figcaption>
+                <span>Футболки</span>
+                <span>от 510 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-3.jpg" alt="" />
+              <figcaption>
+                <span>Свитшоты</span>
+                <span>от 890 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-4.jpg" alt="" />
+              <figcaption>
+                <span>Штаны</span>
+                <span>от 1230 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-5.png" alt="" />
+              <figcaption>
+                <span>Шопперы</span>
+                <span>от 1650 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="product">
+              <img src="../assets/media/img/item-6.jpg" alt="" />
+              <figcaption>
+                <span>Кепки</span>
+                <span>от 400 ₽</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="main_products_video">
+          <h3>
+            Презентация нашей <br />
+            коллекции одежды 2021
+          </h3>
+          <span class="main_products_video_play-btn"></span>
+        </div>
+      </section>
+    </main>
+    <footer>Footer</footer>
+  </body>
 </html>
