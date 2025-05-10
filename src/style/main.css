@@ -326,6 +326,23 @@ input[type=file] {
   font-size: 16px;
   line-height: 150%;
 }
+.main_workflow {
+  background-color: #191919;
+  padding: 300px 0px 160px;
+  color: #ffffff;
+}
+.main_workflow_title {
+  margin-bottom: 36px;
+}
+.main_workflow_description {
+  margin-bottom: 56px;
+}
+.main_workflow_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
 .info-list {
   display: flex;
@@ -453,6 +470,34 @@ input[type=file] {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 150%;
+}
+
+.workflow-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workflow-tile_icon {
+  width: 114px;
+  aspect-ratio: 1/1;
+  position: relative;
+  background-color: #222222;
+  border-radius: 1000000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.workflow-tile_icon > img {
+  max-width: 40%;
+}
+.workflow-tile figcaption {
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "Inter", sans-serif;
 }
 
 body {
