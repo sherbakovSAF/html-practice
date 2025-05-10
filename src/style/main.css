@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "RFDewi";
+  src: url("../../../assets/fonts/RWDewi/RFDewiExtended-Regular.woff2") format("woff2"), url("../../../assets/fonts/RWDewi/RFDewiExtended-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RFDewi";
+  src: url("../../../assets/fonts/RWDewi/RFDewiExtended-Ultrabold.woff2") format("woff2"), url("../../../assets/fonts/RWDewi/RFDewiExtended-Ultrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type=file] {
+  max-width: 100%;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  background: url(../../../assets//media/img/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 21px 0px 33px 0px;
+  font-family: "RFDewi", sans-serif;
+}
+.header > * {
+  position: relative;
+  z-index: 2;
+}
+.header::after {
+  content: "";
+  background: #000000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+.header_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.header_main h1 {
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 48px;
+  font-family: "RFDewi", sans-serif;
+  max-width: 894px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+  max-width: 739px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main_products {
+  padding-top: 120px;
+  padding-bottom: 280px;
+  position: relative;
+}
+.main_products_title {
+  margin-bottom: 60px;
+}
+.main_products_description {
+  margin-bottom: 80px;
+}
+.main_products_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 35px;
+  row-gap: 38px;
+}
+.main_products_video {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  border-radius: 15px;
+  background: url(../../../assets/media/img/video-bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main_products_video h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "RFDewi", sans-serif;
+  letter-spacing: 0px;
+  margin-bottom: 38px;
+}
+.main_products_video_play-btn {
+  width: 105px;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1000000px;
+  position: relative;
+}
+.main_products_video_play-btn::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(20% 15%, 80% 50%, 20% 85%);
+          clip-path: polygon(20% 15%, 80% 50%, 20% 85%);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main_products_video > * {
+  z-index: 2;
+}
+.main_products_video::after {
+  content: "";
+  background: #000000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.info-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "RFDewi", sans-serif;
+  color: #ffffff;
+}
+.info-list_primary a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.info-list_primary a > *:first-child {
+  font-weight: 400;
+  font-size: 24px;
+  font-weight: 800;
+}
+.info-list_primary a > *:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.info-list_secondary a {
+  display: flex;
+  flex-direction: column;
+}
+.info-list_secondary a > *:first-child {
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 800;
+}
+.info-list_secondary a > *:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.btn {
+  background: #F4DF74;
+  border-radius: 10px;
+  padding: 22px 36px;
+  font-family: "RFDewi", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  transition: 0.2s ease-in background;
+}
+.btn:hover {
+  background: #f5e69a;
+}
+
+.product img {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product figcaption {
+  margin-top: 20px;
+}
+.product figcaption span {
+  font-family: "RFDewi", sans-serif;
+  font-weight: 500;
+}
+.product figcaption span:first-child {
+  font-size: 24px;
+}
+.product figcaption span:last-child {
+  font-size: 18px;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin-left: 15px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .container {
+  max-width: 1130px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
