@@ -5,7 +5,13 @@
   font-family: $font-dewi-expanded;
   color: $white;
 
+  height: 100%;
+
+  @media screen and (min-width: 1200px) {
+     height: fit-content;
+    }
   &_primary {
+    margin-bottom: auto;
     a {
       text-align: center;
       display: flex;
@@ -28,6 +34,13 @@
   }
 
   &_secondary {
+
+  margin-top: auto;
+  
+    
+     
+    
+     
     a {
       display: flex;
       flex-direction: column;

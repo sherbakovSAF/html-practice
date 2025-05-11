@@ -1,11 +1,16 @@
 .btn {
     background: $yellow-300;
     border-radius: $rounded-xl;
-    padding: 22px 36px;
+    padding: 19px 20px;
     font-family: $font-dewi-expanded;
     font-weight: $weight-extra-bold;
-    font-size: $text-base;
+    font-size: $text-sm;
     transition: .2s ease-in background;
+
+    @media screen and (min-width: 1200px) {
+        padding: 22px 36px;
+        font-size: $text-base;
+        }
 
     &:hover {
         background: $yellow-200;

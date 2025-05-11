@@ -4,7 +4,13 @@
     max-width: 545px;
     border-radius: $rounded-base;
     object-fit: cover;
-    max-height: 316px;
+    max-height: 229px;
+
+    @media screen and (min-width: 1200px) {
+      max-height: 316px;
+      }
+    
+     
   }
 
 
