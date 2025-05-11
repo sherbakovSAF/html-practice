@@ -8,6 +8,7 @@
 // Blocks
 @import './blocks/header';
 @import './blocks/main';
+@import './blocks/footer';
 
 @import './components/index-components';
 
@@ -20,7 +21,7 @@ body {
   justify-content: space-between;
 
   .container {
-    max-width: 1130px;
+   width: 1130px;
     margin: 0 auto;
   }
 

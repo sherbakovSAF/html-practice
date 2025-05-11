@@ -439,6 +439,26 @@ input[type=file] {
   border-radius: 4px;
 }
 
+.footer {
+  background-color: #191919;
+  padding-bottom: 34px;
+}
+.footer hr {
+  width: 100%;
+  height: 1px;
+  background-color: #2C2C2C;
+}
+.footer > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.footer > .container button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .info-list {
   display: flex;
   justify-content: space-between;
@@ -603,6 +623,6 @@ body {
   justify-content: space-between;
 }
 body .container {
-  max-width: 1130px;
+  width: 1130px;
   margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
