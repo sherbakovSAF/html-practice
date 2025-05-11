@@ -415,6 +415,29 @@ input[type=file] {
   line-height: 120%;
   font-family: "RFDewi", sans-serif;
 }
+.main_collab {
+  background-color: #191919;
+  padding: 764px 0px 80px;
+  color: #ffffff;
+}
+.main_collab_title {
+  margin-bottom: 40px;
+}
+.main_collab_description {
+  margin-bottom: 50px;
+}
+.main_collab_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 35px;
+}
+.main_collab_items img {
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
 
 .info-list {
   display: flex;
