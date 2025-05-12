@@ -6,13 +6,13 @@ dl.description-list {
 	dt {
 		font-weight: $weight-extra;
 		font-family: $font-dewi-expanded;
-		line-height: 120%;
+		line-height: $lh-normal;
 	}
 
 	dd {
 		font-weight: $weight-normal;
 		text-transform: uppercase;
 		font-family: $font-inter;
-		line-height: 150%;
+		line-height: $lh-large;
 	}
 }

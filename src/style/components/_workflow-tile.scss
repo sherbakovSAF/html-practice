@@ -41,7 +41,7 @@
     text-align: center;
     font-size: $text-base;
     font-weight: $weight-normal;
-    line-height: 150%;
+    line-height: $lh-large;
     font-family: $font-inter;
 
     @include resp-before('sm'){

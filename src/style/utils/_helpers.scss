@@ -34,7 +34,7 @@
   font-weight: $weight-normal;
   font-size: $text-sm;
   font-family: $font-inter;
-  line-height: 150%;
+  line-height: $lh-large;
   text-align: center;
 	max-width: 740px; // TODO: Странное решение, но так в макете
 	margin-left: auto;// TODO: Из-за решения выше
