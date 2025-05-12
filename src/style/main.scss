@@ -6,9 +6,9 @@
 @import './base/mixins';
 
 // Blocks
-@import './blocks/header';
-@import './blocks/main';
-@import './blocks/footer';
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
 
 @import './components/index-components';
 
