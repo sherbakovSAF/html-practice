@@ -5,7 +5,6 @@
 .presentation {
 	position: relative;
 	height: 260px;
-	// TODO: Вынос с переменную
 	border-radius: $rounded-3xl;
 	background: url(../../../assets/media/img/video-bg.jpg) no-repeat center;
 	background-size: cover;
@@ -67,11 +66,10 @@
 		}
 
 		&:hover {
-			// TODO: Добавить перменную
 			background: rgba($white, .4);
 
 			svg {
-				fill: yellow;
+				fill: $yellow-300;
 			}
 		}
 	}

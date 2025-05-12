@@ -1,4 +1,3 @@
-
 @use '../../assets/fonts/RWDewi/stylesheetRFDewi' as *;
 
 @use './base/reset' as *;
@@ -6,7 +5,7 @@
 @use './base/mixins' as *;
 
 // Layouts
-@use './layout/header' as *; 
+@use './layout/header' as *;
 @use './layout/footer' as *;
 
 // Sections
@@ -21,14 +20,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-html{
+html {
 	scroll-behavior: smooth;
+
 	body {
-			font-family: $font-inter;
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			scroll-behavior: smooth;
-		}
+		font-family: $font-inter;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		scroll-behavior: smooth;
+	}
 }

@@ -1,22 +1,22 @@
 @use '../base/var' as *;
 
 button.btn {
-    width: fit-content;
-    background: $yellow-300;
-    border-radius: $rounded-xl;
-    padding: 19px 20px;
-    font-family: $font-dewi-expanded;
-    font-weight: $weight-extra;
+  width: fit-content;
+  background: $yellow-300;
+  border-radius: $rounded-xl;
+  padding: 19px 20px;
+  font-family: $font-dewi-expanded;
+  font-weight: $weight-extra;
+  font-size: $text-base;
+  transition: $transition-base background;
+  color: $black-900;
+
+  @media screen and (min-width: 1200px) {
+    padding: 22px 36px;
     font-size: $text-base;
-    transition: $transition-base background;
-    color: $black-900;
+  }
 
-    @media screen and (min-width: 1200px) {
-        padding: 22px 36px;
-        font-size: $text-base;
-    }
-
-    &:hover {
-        background: $yellow-200;
-    }
+  &:hover {
+    background: $yellow-200;
+  }
 }
