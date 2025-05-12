@@ -1,0 +1,38 @@
+.workflow {
+	background-color: $bg-secondary;
+	padding: 275px 0px 110px;
+	color: $white;
+
+	@media screen and (min-width: 1200px) {
+		padding: 300px 0px 160px;
+	}
+
+	&_title {
+		margin-bottom: 46px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 36px;
+		}
+	}
+
+	&_description {
+		margin-bottom: 120px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 56px;
+		}
+	}
+
+	&_items {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(calc(50% - 50px), 1fr));
+		gap: 50px;
+
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+		}
+	}
+}

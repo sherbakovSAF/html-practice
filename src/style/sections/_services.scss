@@ -1,0 +1,41 @@
+.services {
+	background-color: $bg-tertiary;
+	padding: 305px 0 130px 0;
+
+	&_title {
+		margin-bottom: 72px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 54px;
+		}
+	}
+
+	&_description {
+		margin-bottom: 50px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 70px;
+		}
+	}
+
+	&_items {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: 83px;
+		row-gap: 38px;
+		justify-self: center;
+
+		>* {
+			max-width: 350px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			gap: 35px;
+
+			>* {
+				max-width: none
+			}
+		}
+
+	}
+}

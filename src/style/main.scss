@@ -5,12 +5,16 @@
 @import './base/var';
 @import './base/mixins';
 
-// Blocks
+// Layouts
 @import './layout/header';
 @import './layout/main';
 @import './layout/footer';
 
-@import './components/index-components';
+// Sections
+@import './sections/index';
+
+// Components
+@import './components/index';
 
 
 body {

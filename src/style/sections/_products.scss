@@ -1,0 +1,28 @@
+.products {
+	padding-top: 57px;
+	padding-bottom: 280px;
+	position: relative;
+
+	@media screen and (min-width: 1200px) {
+
+		padding-top: 120px;
+	}
+
+	&_title {
+		margin-bottom: 60px;
+	}
+
+	&_description {
+		margin-bottom: 80px;
+	}
+
+	&_items {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 35px;
+		row-gap: 38px;
+		justify-items: center;
+	}
+
+	
+}

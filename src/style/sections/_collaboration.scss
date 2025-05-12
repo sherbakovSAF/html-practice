@@ -1,0 +1,52 @@
+.collaboration {
+	background-color: $bg-secondary;
+	padding: 1057px 0px 105px;
+	color: $white;
+
+	@media screen and (min-width: 1200px) {
+		padding: 764px 0px 80px;
+	}
+
+	&_title {
+		margin-bottom: 88px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 40px;
+		}
+
+	}
+
+	&_description {
+		margin-bottom: 72px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&_items {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(calc(250px - 30px* 2), 1fr));
+		gap: 30px;
+		justify-items: center;
+
+		@media screen and (min-width: 1200px) {
+			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+			gap: 35px;
+
+		}
+
+		img {
+
+			max-width: 250px;
+
+			@media screen and (min-width: 1200px) {
+				max-width: 350px;
+			}
+
+			aspect-ratio: 1/1;
+			object-fit: cover;
+			border-radius: $rounded-sm;
+		}
+	}
+}
