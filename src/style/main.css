@@ -180,9 +180,9 @@ input[type=file] {
 .header::after {
   content: "";
   background: #000000;
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   opacity: 0.5;
@@ -471,9 +471,9 @@ input[type=file] {
 .promo_bg::after {
   content: "";
   background: #000000;
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   opacity: 0.5;

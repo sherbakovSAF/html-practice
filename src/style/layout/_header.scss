@@ -1,4 +1,5 @@
 @use '../base/var' as *;
+@use '../base/mixins' as *;
 @use '../utils/responsive' as *;
 
 .header {
@@ -9,7 +10,7 @@
 	font-family: $font-dewi-expanded;
 	position: relative;
 
-	@include resp-before('md'){
+	@include resp-before('md') {
 		height: 100vh;
 	}
 
@@ -75,27 +76,12 @@
 				* {
 					text-align: start;
 				}
-
-				// #{$links}_logo{
-				// 	top: 15px;
-				// }
-				// margin-top: calc(100px / 2);
 			}
 		}
 	}
 
 	&::after {
-		// TODO: ВЫнести Bg 100 процентов
 		content: '';
-		background: $black-900;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0.5;
-		z-index: 1;
+		@include bg-absolution(0.5);
 	}
-
-
 }

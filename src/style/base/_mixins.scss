@@ -1,8 +1,19 @@
-// @import './var';
+@use './var' as *;
 
 @mixin grid($cols, $gap: 1rem) {
   display: grid;
   grid-template-columns: repeat(#{$cols}, 1fr);
   gap: $gap;
+}
+
+@mixin bg-absolution($opacity: 0.5) {
+    background: $black-900;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: $opacity;
+    z-index: 1;
 }
 
