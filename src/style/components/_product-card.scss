@@ -32,7 +32,7 @@
 
   &_title {
     display: inline-block;
-    font-size: 24px;
+    font-size: $text-2xl;
     max-width: 50%;
     white-space: nowrap;
     overflow: hidden;
@@ -41,14 +41,14 @@
 
 
   &_price {
-    font-size: 14px;
+    font-size: $text-sm;
     transform: translateY(-50%);
     display: inline-block;
     margin-left: 6px;
 
 
     @include resp-before('xl') {
-      font-size: 18px;
+      font-size: $text-lg;
       margin-left: 15px;
     }
   }

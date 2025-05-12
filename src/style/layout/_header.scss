@@ -26,12 +26,12 @@
 
 		h1 {
 			font-weight: $weight-extra;
-			font-size: 35px;
+			font-size: $text-3xl;
 			text-align: center;
 			color: $white;
 
 			@include resp-before('xl') {
-				font-size: 60px;
+				font-size: $text-5xl;
 			}
 		}
 

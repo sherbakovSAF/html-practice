@@ -5,7 +5,7 @@
 	font-weight: $weight-extra;
 	line-height: 120%;
 	text-align: center;
-	font-size: 25px;
+	font-size: $text-2xl;
 }
 
 .logo-wrap {
@@ -15,7 +15,7 @@
 	align-items: center;
 	
 	>*:not(.logo) {
-		font-size: 16px;
+		font-size: $text-base;
 		line-height: 150%;
 		font-weight: $weight-normal;
 		font-family: $font-inter;

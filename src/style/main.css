@@ -132,7 +132,7 @@ input[type=file] {
 }
 .header_content h1 {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
   color: #ffffff;
 }
@@ -768,7 +768,7 @@ button.btn:hover {
   font-weight: 800;
   line-height: 120%;
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .logo-wrap {
@@ -971,13 +971,13 @@ dl.description-list dd {
 
 .section-title {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 32px;
   font-family: "RFDewi", sans-serif;
   text-align: center;
 }
 @media (min-width: 414px) {
   .section-title {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 @media (min-width: 1200px) {

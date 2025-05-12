@@ -17,22 +17,22 @@
 // Классы ниже возможно вынесутся в другой файл
 .section-title {
   font-weight: $weight-extra;
-	font-size: 30px;
+	font-size: $text-3xl;
   font-family: $font-dewi-expanded;
   text-align: center;
 
 	@include resp-before("sm") {
-		font-size: 35px;
+		font-size: $text-3xl;
 	}
 
 	@include resp-before("xl") {
-		font-size: 48px;
+		font-size: $text-4xl;
 	}
 }
 
 .section-description {
   font-weight: $weight-normal;
-  font-size: 14px;
+  font-size: $text-sm;
   font-family: $font-inter;
   line-height: 150%;
   text-align: center;
@@ -41,7 +41,7 @@
 	margin-right: auto;// TODO: Из-за решения выше
 
 	@include resp-before("pre-md") {
-		font-size: 16px;
+		font-size: $text-base;
 	}
 }
 

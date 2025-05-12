@@ -8,14 +8,15 @@ button.btn {
     padding: 19px 20px;
     font-family: $font-dewi-expanded;
     font-weight: $weight-extra;
-    font-size: 16px;
+    font-size: $text-base;
+    
     transition: .2s ease-in background;
     // TODO: Вынести в переменную, возможно
     color: black;
 
     @media screen and (min-width: 1200px) {
         padding: 22px 36px;
-        font-size: 16px;
+        font-size: $text-base;
     }
 
     &:hover {

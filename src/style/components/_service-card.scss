@@ -22,7 +22,7 @@
 
   &_title {
     font-weight: $weight-extra;
-    font-size: 20px;
+    font-size: $text-xl;
     font-family: $font-dewi-expanded;
     margin-bottom: 24px;
   }
@@ -30,7 +30,7 @@
   &_description {
     font-weight: 400;
     font-family: $font-inter;
-    font-size: 16px;
+    font-size: $text-base;
     line-height: 150%;
   }
 
