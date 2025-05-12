@@ -1,48 +1,101 @@
+@use '../base/var' as *;
+@use '../utils/responsive' as *;
+
 .header {
-   height: 100vh;
-   position: relative;
-   background: url(../../../assets//media/img/header-bg.jpg) center no-repeat;
-   background-size: cover;
-   padding: 21px 0px 33px 0px;
-   font-family: $font-dewi-expanded;
+	height: 700px;
+	background: url(../../../assets//media/img/header-bg.jpg) center no-repeat;
+	background-size: cover;
+	color: $white;
+	font-family: $font-dewi-expanded;
+	position: relative;
 
-   >* {
-      position: relative;
-      z-index: 2;
-   }
+	@include resp-before('md'){
+		height: 100vh;
+	}
+
+	&_content {
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+
+		h1 {
+			font-weight: $weight-extra;
+			font-size: 35px;
+			text-align: center;
+			color: $white;
+
+			@include resp-before('xl') {
+				font-size: 60px;
+			}
+		}
+
+		&_links {
+			$links: &;
+
+			padding: 30px;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 20px;
 
 
-   &::after {
-      content: '';
-      background: $black-900;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.5;
-      z-index: 1;
-   }
+			* {
+				text-align: center;
+			}
 
-   &_main {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
 
-      h1 {
-         font-weight: $weight-extra-bold;
-         font-size: 35px;
+			&_logo {
+				position: absolute;
+				top: 30px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
 
-         text-align: center;
-         color: $white;
+			@include resp-before('sm') {
+				flex-direction: row;
 
-         @media screen and (min-width: 1200px) {
-            font-size: 60px;
-         }
-      }
-   }
+				align-items: flex-end;
+				justify-content: space-between;
+			}
+
+			@include resp-before('pre-md') {
+				align-items: flex-start;
+
+				* {
+					text-align: start;
+				}
+
+				// #{$links}_logo{
+				// 	top: 15px;
+				// }
+				// margin-top: calc(100px / 2);
+			}
+		}
+	}
+
+	&::after {
+		// TODO: ВЫнести Bg 100 процентов
+		content: '';
+		background: $black-900;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.5;
+		z-index: 1;
+	}
+
+
 }

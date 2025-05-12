@@ -1,37 +1,30 @@
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .printing {
-	padding: 100px 0 150px;
+	padding: 80px 0 250px;
 	position: relative;
 
 
+	@include resp-before('xl') {
+		padding: 100px 0 320px;
+	}
 
 	&_title {
-		margin-bottom: 65px;
+		margin-bottom: 40px;
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('xl') {
 			margin-bottom: 80px;
 		}
 	}
 
 	&_items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(395px, 1fr));
+		@include grid(1);
 		gap: 42px;
-		row-gap: 38px;
-		justify-items: center;
 
-		>* {
-			max-width: 395px;
-		}
-
-		@media screen and (min-width: 1200px) {
-			grid-template-columns: repeat(auto-fill, minmax(545px, 1fr));
+		@include resp-before('pre-md') {
+			@include grid(2);
 			gap: 35px;
-
-			>* {
-				max-width: none
-			}
 		}
 	}
-
-	
 }

@@ -1,10 +1,11 @@
+@use '../base/var' as *;
+@use '../utils/responsive' as *;
+
 .presentation {
-	width: calc(100% - 30px * 2);
-	height: 350px;
-	position: absolute;
-	bottom: 0;
-	transform: translateY(125%);
-	border-radius: $rounded-3xl;
+	position: relative;
+	height: 260px;
+	// TODO: Вынос с переменную
+	border-radius: 15px;
 	background: url(../../../assets/media/img/video-bg.jpg) no-repeat center;
 	background-size: cover;
 	display: flex;
@@ -13,60 +14,75 @@
 	align-items: center;
 	overflow: hidden;
 
-	@media screen and (min-width: 1200px) {
-
-		transform: translateY(125%);
+	@include resp-before('sm'){
+		height: 280px;
 	}
 
-	h3 {
-		font-weight: $weight-extra-bold;
-		font-size: 24px;
-		line-height: 120%;
-		color: $white;
-		text-align: center;
-		font-family: $font-dewi-expanded;
-		letter-spacing: 0px;
-		margin-bottom: 38px;
+	@include resp-before('pre-md'){
+		height: 350px;
 	}
 
-	&_play-btn {
-		width: 105px;
-		aspect-ratio: 1/1;
-		background-color: rgba($white, .2);
-		border-radius: $rounded-full;
-		position: relative;
-
-
-
-		&::after {
-			content: '';
-			display: inline-block;
-			width: 80px;
-			height: 80px;
-			background-color: $white;
-			clip-path: polygon(20% 15%, 80% 50%, 20% 85%);
-			border-radius: 10px;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-
-		}
+	&::after {
+		content: '';
+		background: $black-900;
+		position: absolute;
+		// TODO: Возможно вынести в mixin, как BG
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.6;
+		z-index: 1;
 	}
 
 	>* {
 		z-index: 2;
 	}
 
-	&::after {
-		content: '';
-		background: $black-900;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0.5;
-		z-index: 1;
+	&_title {
+		font-weight: $weight-extra;
+		font-size: 24px;
+		line-height: 120%;
+		color: $text-color-secondary;
+		text-align: center;
+		font-family: $font-dewi-expanded;
+		margin-bottom: 38px;
+	}
+
+	&_play-btn {
+		position: relative;
+		
+		aspect-ratio: 1/1;
+		// TODO: Добавить перменную
+		background: rgba($white, .2);
+		width: 80px;
+		border-radius: $rounded-full;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.2s ease-in background;
+		backdrop-filter: blur(1px);
+		
+		@include resp-before('lg'){
+			width: 105px;
+		}
+
+		svg {
+			width: 30%;
+			aspect-ratio: 1/1;
+			fill: $white;
+			// TODO: Вынести в миксин анимацию
+			transition: 0.2s ease-in fill;
+		}
+
+		&:hover {
+			// TODO: Добавить перменную
+			background: rgba($white, .4);
+
+			svg {
+				fill: yellow;
+			}
+		}
 	}
 }

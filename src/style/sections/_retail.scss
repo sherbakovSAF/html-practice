@@ -1,53 +1,62 @@
+@use '../base/var' as *;
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .retail {
-	background-color: $grey-400;
-	border-radius: $rounded-3xl;
+	// TODO: Вынести в переменные, возможно
+	background-color: #E6E6E6;
+	border-radius: 15px;
 	overflow: hidden;
+	margin-top: 155px;
 
-	position: absolute;
-	bottom: 0;
-	left: 50%;
+	@include resp-before('xs') {
+		margin-top: 207px;
+		}
 
+	@include resp-before('sm') {
+		margin-top: 187px;
+		}
 
-	transform: translate(-50%, calc(125% - 108.5px));
-	width: calc(100% - 30px);
-
-	@media screen and (min-width: 1200px) {
-		width: 100%;
-		transform: translate(-50%, 110%);
-	}
+	@include resp-before('pre-md') {
+		margin-top: 338px;
+		}
 
 	&_top {
-		padding: 84px 0 60px;
+		padding: 50px 10px 30px;
+
+		@include resp-before('pre-md') {
+			padding: 84px 10px 60px;
+		}
 
 		&_title {
 			margin-bottom: 30px;
 		}
 
 		&_description {
-			margin-bottom: 60px;
 			max-width: 600px;
 		}
 	}
 
 	&_bottom {
-
-		@media screen and (min-width: 1200px) {
-			display: flex;
-			justify-content: center;
+		@include resp-before('lg') {
+			@include grid(2, 0)
 		}
 
 		figure {
-			height: 472px;
+			height: 250px;
 			position: relative;
 
-			@media screen and (min-width: 1200px) {
-				width: 50%;
+			@include resp-before('pre-md') {
+				height: 350px;
+			}
+
+			@include resp-before('md') {
+				height: 470px;
 			}
 
 			img {
 				object-fit: cover;
 				height: 100%;
-
 				width: 100%;
 			}
 
@@ -56,12 +65,10 @@
 				bottom: 30px;
 				left: 40px;
 				color: $white;
-
-				font-weight: $weight-extra-bold;
+				font-weight: $weight-extra;
 				font-size: 24px;
 				line-height: 120%;
 				font-family: $font-dewi-expanded;
-
 			}
 		}
 	}

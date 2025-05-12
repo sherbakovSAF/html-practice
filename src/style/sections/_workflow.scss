@@ -1,38 +1,45 @@
+@use '../base/var' as *;
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .workflow {
 	background-color: $bg-secondary;
-	padding: 275px 0px 110px;
+	padding: 200px 0px 110px;
 	color: $white;
 
-	@media screen and (min-width: 1200px) {
+	@include resp-before('md') {
 		padding: 300px 0px 160px;
 	}
 
 	&_title {
 		margin-bottom: 46px;
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('xl') {
 			margin-bottom: 36px;
 		}
 	}
 
 	&_description {
-		margin-bottom: 120px;
-
-		@media screen and (min-width: 1200px) {
-			margin-bottom: 56px;
-		}
+		margin-bottom: 56px;
 	}
 
 	&_items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(calc(50% - 50px), 1fr));
-		gap: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		@include grid(1, 24px);
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('sm') {
+			@include grid(2, 24px);
+		}
+
+		@include resp-before('pre-md') {
+			@include grid(3, 24px);
+		}
+
+		@include resp-before('md') {
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
-			gap: 30px;
 		}
 	}
 }

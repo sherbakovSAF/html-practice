@@ -1,59 +1,71 @@
-// Цвета 
-$black-600: #2C2C2C; 
-$black-700: #222222; 
-$black-800: #1A1A1A; 
-$black-850: #191919; 
+// // Цвета 
+// $black-600: #2C2C2C; 
+// $black-700: #222222; 
+// $black-800: #1A1A1A; 
+// $black-850: #191919; 
 $black-900: #000000;
 
-$grey-100: #EEEEEE;
-$grey-400: #E6E6E6;
+// $grey-100: #EEEEEE;
+// $grey-400: #E6E6E6;
 
 $white: #ffffff;
 
-$yellow-200: #f5e69a;
-$yellow-300: #F4DF74;
+$text-color-primary: black;
+$text-color-secondary: $white;
 
-$text-primary: $black-850;
-$text-secondary: $white;
+// $yellow-200: #f5e69a;
+// $yellow-300: #F4DF74;
 
-// Задний фон
+// $text-primary: $black-850;
+// $text-secondary: $white;
+
+// // Задний фон
 $bg-primary: $white;
-$bg-secondary: $black-850;
-$bg-tertiary: $grey-100;
+// $bg-secondary: $black-850;
+$bg-secondary: #191919;
+// $bg-tertiary: $grey-100;
+$bg-tertiary: #EEEEEE;
 
-$action-primary-bg: $yellow-300;
-$action-primary-bg--hover: $yellow-200;
+// $action-primary-bg: $yellow-300;
+// $action-primary-bg--hover: $yellow-200;
 
-// Текст
-$text-xs: 12px;
-$text-sm: 14px;
-$text-base: 16px; 
-$text-lg: 18px;
-$text-xl: 20px;
-$text-2xl: 24px;
-$text-3xl: 32px;
-$text-4xl: 48px;
-$text-5xl: 60px;
+// // Текст
+// 24px;
+// 14px;
+// 18px;
+// 30px;
+// 35px;
+// 48px;
+// : 20px
+// $text-xs: 12px;
+// $text-sm: 14px;
+// $text-base: 16px; 
+// $text-lg: 18px;
+// $text-xl: 20px;
+// $text-2xl: 24px;
+// $text-3xl: 32px;
+// $text-4xl: 48px;
+// $text-5xl: 60px;
 
 $font-inter: "Inter", sans-serif;
 $font-dewi-expanded: 'RFDewi', sans-serif;
 
-// Закругление
-$rounded-xs: 2px;
-$rounded-sm: 4px;
-$rounded-base: 6px;
-$rounded-lg: 8px;
-$rounded-xl: 10px;
-$rounded-2xl: 12px;
-$rounded-3xl: 15px;
+// // Закругление
+// $rounded-xs: 2px;
+// $rounded-sm: 4px;
+// $rounded-base: 6px;
+// $rounded-lg: 8px;
+// $rounded-xl: 10px;
+// $rounded-2xl: 12px;
+// $rounded-3xl: 15px;
 $rounded-full: 1000000px;
 
-// Жирность
+// // Жирность
 $weight-normal: 400;
 $weight-medium: 500;
-$weight-extra-bold: 800;
+$weight-extra: 800;
 
-// Межстрочный отступ
-$lh-small: 110px;
-$lh-normal: 120px;
-$lh-large: 150px;
+// // Межстрочный отступ
+// $lh-small: 110px;
+// $lh-normal: 120px;
+// $lh-large: 150px;

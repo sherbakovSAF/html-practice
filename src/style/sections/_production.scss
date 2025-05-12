@@ -1,55 +1,51 @@
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .production {
-	position: relative;
-	padding: 85px 0px 600px;
+	padding: 85px 0px 400px;
 
+	@include resp-before('md') {
+		@include resp-to('lg'){
+			padding: 85px 0px 600px;
+		}	
+	}
 
-	@media screen and (min-width: 1200px) {
+	@include resp-before('xl') {
 		padding: 125px 0px 340px;
 	}
 
-
 	&_title {
-		margin-bottom: 70px;
+		margin-bottom: 60px;
 
-		@media screen and (min-width: 1200px) {
-			margin-bottom: 73px;
+		@include resp-before('md') {
+			margin-bottom: 72px;
 		}
 	}
 
 	&_description {
-		margin-bottom: 72px;
+		margin-bottom: 50px;
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('md') {
 			margin-bottom: 80px;
 		}
 	}
 
 	&_items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-		gap: 32px;
+		@include grid(1, 32px);
 
-		@media screen and (min-width: 1200px) {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-			gap: 36px;
+		@include resp-before('sm') {
+			@include grid(2, 32px);
+		}
+
+		@include resp-before('md') {
+			@include grid(3, 32px);
 		}
 
 		img {
 			width: 100%;
 			aspect-ratio: 1/1;
 			object-fit: cover;
-			border-radius: $rounded-sm;
-
-			@media screen and (min-width: 1200px) {
-				max-width: 350px;
-			}
+			border-radius: 4px;
 		}
 	}
-
-
-	
-
-
-
 }

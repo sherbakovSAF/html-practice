@@ -1,0 +1,31 @@
+@use '../base/var' as *;
+
+.logo {
+	font-family: $font-dewi-expanded;
+	font-weight: $weight-extra;
+	line-height: 120%;
+	text-align: center;
+	font-size: 25px;
+}
+
+.logo-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	>*:not(.logo) {
+		font-size: 16px;
+		line-height: 150%;
+		font-weight: $weight-normal;
+		font-family: $font-inter;
+		text-align: center;
+	}
+
+	&--subtitle-decorative {
+		>*:not(.logo) {
+			text-transform: uppercase;
+			font-family: $font-dewi-expanded;
+		}
+	}
+}

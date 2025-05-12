@@ -1,47 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import '../../assets/fonts/RWDewi/stylesheetRFDewi';
 
-@import './base/reset';
-@import './base/var';
-@import './base/mixins';
+@use '../../assets/fonts/RWDewi/stylesheetRFDewi' as *;
+
+@use './base/reset' as *;
+@use './base/var' as *;
+@use './base/mixins' as *;
 
 // Layouts
-@import './layout/header';
-@import './layout/main';
-@import './layout/footer';
+@use './layout/header' as *; 
+@use './layout/footer' as *;
 
 // Sections
-@import './sections/index';
+@use './sections/index' as *;
 
 // Components
-@import './components/index';
+@use './components/index' as *;
+
+// Utils
+@use './utils/_index' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-body {
-  font-family: $font-inter;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-
-
-  .container {
-   
-    margin: 0 auto;
-
-    padding: 0 30px;
-    position: relative;
-
-    @media screen and (min-width: 1200px) {
-      padding: 0 30px;
-      max-width: 1130px;
-    }
-
-    @media screen and (min-width: 1440px) {
-      padding: 0;
-    }
-  }
-
-
+html{
+	scroll-behavior: smooth;
+	body {
+			font-family: $font-inter;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			scroll-behavior: smooth;
+		}
 }

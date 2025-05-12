@@ -1,11 +1,19 @@
+@use '../base/var' as *;
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .services {
 	background-color: $bg-tertiary;
-	padding: 305px 0 130px 0;
+	padding: 200px 0 80px 0;
+
+	@include resp-before('pre-md') {
+		padding: 306px 0 130px;
+	}
 
 	&_title {
 		margin-bottom: 72px;
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('xl') {
 			margin-bottom: 54px;
 		}
 	}
@@ -13,29 +21,22 @@
 	&_description {
 		margin-bottom: 50px;
 
-		@media screen and (min-width: 1200px) {
+		@include resp-before('xl') {
 			margin-bottom: 70px;
 		}
 	}
 
 	&_items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-		gap: 83px;
-		row-gap: 38px;
-		justify-self: center;
+		@include grid(1);
+		gap: 82px;
 
-		>* {
-			max-width: 350px;
+		@include resp-before('pre-md') {
+			@include grid(2);
+			gap: 36px;
 		}
 
-		@media screen and (min-width: 1200px) {
-			gap: 35px;
-
-			>* {
-				max-width: none
-			}
+		@include resp-before('lg') {
+			@include grid(3);
 		}
-
 	}
 }

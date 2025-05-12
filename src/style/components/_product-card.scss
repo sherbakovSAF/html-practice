@@ -1,0 +1,56 @@
+@use '../base/var' as *;
+@use '../utils/responsive' as *;
+
+.product-card {
+  $card: &;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: 0.2s ease-in transform;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  figcaption {
+    margin-top: 10px;
+
+    @include resp-before('pre-md') {
+      margin-top: 20px;
+    }
+
+    span {
+      position: relative;
+      font-family: $font-dewi-expanded;
+      font-weight: $weight-normal;
+    }
+  }
+
+  &_title {
+    display: inline-block;
+    font-size: 24px;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  &_price {
+    font-size: 14px;
+    transform: translateY(-50%);
+    display: inline-block;
+    margin-left: 6px;
+
+
+    @include resp-before('xl') {
+      font-size: 18px;
+      margin-left: 15px;
+    }
+  }
+
+}

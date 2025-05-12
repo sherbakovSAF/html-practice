@@ -1,51 +1,59 @@
-@import './var';
+// @import './var';
 
-@mixin font-xs-bold-expanded {
-    font-size: $text-xs;
-    font-weight: $weight-extra-bold;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-normal;
-  }
+@mixin grid($cols, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat(#{$cols}, 1fr);
+  gap: $gap;
+}
+
+
+
+// @mixin font-xs-bold-expanded {
+//     font-size: $text-xs;
+//     font-weight: $weight-extra-bold;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-normal;
+//   }
   
-  @mixin font-2xl-bold-expanded {
-    font-size: $text-2xl;
-    font-weight: $weight-extra-bold;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-normal;
-  }
+//   @mixin font-2xl-bold-expanded {
+//     font-size: $text-2xl;
+//     font-weight: $weight-extra-bold;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-normal;
+//   }
   
-  @mixin font-5xl-bold-expanded {
-    font-size: $text-5xl;
-    font-weight: $weight-extra-bold;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-normal;
-  }
+//   @mixin font-5xl-bold-expanded {
+//     font-size: $text-5xl;
+//     font-weight: $weight-extra-bold;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-normal;
+//   }
   
-  @mixin font-4xl-bold-expanded {
-    font-size: $text-4xl;
-    font-weight: $weight-extra-bold;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-small;
-  }
+//   @mixin font-4xl-bold-expanded {
+//     font-size: $text-4xl;
+//     font-weight: $weight-extra-bold;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-small;
+//   }
   
-  @mixin font-base-normal-inter {
-    font-size: $text-base;
-    font-weight: $weight-normal;
-    font-family: $font-inter;
-    line-height: $lh-large;
-  }
+//   @mixin font-base-normal-inter {
+//     font-size: $text-base;
+//     font-weight: $weight-normal;
+//     font-family: $font-inter;
+//     line-height: $lh-large;
+//   }
   
-  @mixin font-lg-normal-dewi {
-    font-size: $text-lg;
-    font-weight: $weight-normal;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-normal;
-  }
+//   @mixin font-lg-normal-dewi {
+//     font-size: $text-lg;
+//     font-weight: $weight-normal;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-normal;
+//   }
   
-  @mixin font-xl-normal-inter {
-    font-size: $text-xl;
-    font-weight: $weight-normal;
-    font-family: $font-dewi-expanded;
-    line-height: $lh-large;
-  }
+//   @mixin font-xl-normal-inter {
+//     font-size: $text-xl;
+//     font-weight: $weight-normal;
+//     font-family: $font-dewi-expanded;
+//     line-height: $lh-large;
+//   }
   

@@ -1,35 +1,38 @@
+@use '../base/var' as *;
+@use '../base/mixins' as *;
+@use '../utils/responsive' as *;
+
 .printing-card {
+  text-align: center;
+
   img {
     width: 100%;
-    max-width: 545px;
-    border-radius: $rounded-base;
+    border-radius: 6px;
     object-fit: cover;
-    max-height: 229px;
+    height: 228px;
 
-    @media screen and (min-width: 1200px) {
-      max-height: 316px;
-      }
-    
-     
+    @include resp-before('lg') {
+      height: 316px;
+    }
   }
 
 
   figcaption {
     margin-top: 40px;
-    text-align: center;
 
-    h3 {
-      font-weight: $weight-extra-bold;
-      font-size: 20px;
-      font-family: $font-dewi-expanded;
-      margin-bottom: 24px;
-    }
+  }
 
-    p {
-      font-weight: 400;
-      font-family: $font-inter;
-      font-size: 16px;
-      line-height: 150%;
-    }
+  &_title {
+    font-weight: $weight-extra;
+    font-size: 20px;
+    font-family: $font-dewi-expanded;
+    margin-bottom: 24px;
+  }
+
+  &_description {
+    font-weight: 400;
+    font-family: $font-inter;
+    font-size: 16px;
+    line-height: 150%;
   }
 }

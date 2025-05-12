@@ -1,32 +1,37 @@
+@use '../base/var' as *;
+
 .service-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+
   img {
     width: 100%;
-    max-width: 350px;
-    border-radius: $rounded-base;
+    border-radius: 6px;
     object-fit: cover;
-    max-height: 210px;
+    height: 210px;
   }
-
 
   figcaption {
     margin-top: 20px;
     text-align: center;
 
-    h3 {
-      font-weight: $weight-extra-bold;
-      font-size: 20px;
-      font-family: $font-dewi-expanded;
-      margin-bottom: 25px;
-    }
 
-    p {
-      font-weight: 400;
-      font-family: $font-inter;
-      font-size: 16px;
-      line-height: 150%;
-    }
   }
+
+  &_title {
+    font-weight: $weight-extra;
+    font-size: 20px;
+    font-family: $font-dewi-expanded;
+    margin-bottom: 24px;
+  }
+
+  &_description {
+    font-weight: 400;
+    font-family: $font-inter;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
 }

@@ -1,0 +1,58 @@
+
+@use './responsive' as *;
+@use '../base/var' as *;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 30px;
+
+  @include resp-before("xl") {
+    padding: 0;
+    max-width: 1130px;
+  }
+}
+
+// Классы ниже возможно вынесутся в другой файл
+.section-title {
+  font-weight: $weight-extra;
+	font-size: 30px;
+  font-family: $font-dewi-expanded;
+  text-align: center;
+
+	@include resp-before("sm") {
+		font-size: 35px;
+	}
+
+	@include resp-before("xl") {
+		font-size: 48px;
+	}
+}
+
+.section-description {
+  font-weight: $weight-normal;
+  font-size: 14px;
+  font-family: $font-inter;
+  line-height: 150%;
+  text-align: center;
+	max-width: 740px; // TODO: Странное решение, но так в макете
+	margin-left: auto;// TODO: Из-за решения выше
+	margin-right: auto;// TODO: Из-за решения выше
+
+	@include resp-before("pre-md") {
+		font-size: 16px;
+	}
+}
+
+.between-section{
+	height: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	>*{
+		flex-shrink: 0;
+	}
+}
+
+// Конец возможных вынесенных файлов

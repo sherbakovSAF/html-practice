@@ -1,6 +1,8 @@
-@import './info-list';
-@import './button';
-@import './product';
+
+@use './button';
+@use './logo';
+@use './description-list';
+@use './product-card';
 @import './service-card';
 @import './printing-card';
 @import './workflow-tile';

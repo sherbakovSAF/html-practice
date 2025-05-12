@@ -1,31 +1,52 @@
+@use '../base/var' as *;
+@use '../utils/responsive' as *;
+
 .workflow-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &_icon {
-    width: 114px;
+    width: 90px;
     aspect-ratio: 1/1;
     position: relative;
-    background-color: $black-700;
+    // TODO: Вынести переменную, если надо
+    background: #222222;
     border-radius: $rounded-full;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 34px;
+    cursor: pointer;
+    transition: 0.2s ease-in background;
 
-    >img {
+    &:hover{
+      background: $white;
+      svg{
+        fill: #222222;
+      }
+    }
+
+    >svg {
+      transition: 0.2s ease-in background;
       max-width: 40%;
+      fill: $white;
     }
 
-   
-  }
-    figcaption {
-      width: 160px;
-      text-align: center;
-      font-size: 16px;
-      font-weight: $weight-normal;
-      line-height: 150%;
-      font-family: $font-inter;
+    @include resp-before('pre-md') {
+      width: 114px;
     }
+  }
+
+  &_description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: $weight-normal;
+    line-height: 150%;
+    font-family: $font-inter;
+
+    @include resp-before('sm'){
+      max-width: 160px;
+    }
+  }
 }

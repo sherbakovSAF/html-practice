@@ -1,28 +1,38 @@
+@use '../utils/responsive' as *;
+@use '../base/mixins' as *;
+
 .products {
-	padding-top: 57px;
-	padding-bottom: 280px;
-	position: relative;
+	padding: 60px 0 200px;
 
-	@media screen and (min-width: 1200px) {
-
-		padding-top: 120px;
+	@include resp-before('pre-md') {
+		padding: 120px 0 280px;
 	}
 
 	&_title {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
+
+		@include resp-before('pre-md') {
+			margin-bottom: 60px;
+		}
 	}
 
 	&_description {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
+
+		@include resp-before('pre-md') {
+			margin-bottom: 80px;
+		}
 	}
 
 	&_items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-		gap: 35px;
-		row-gap: 38px;
-		justify-items: center;
-	}
+		@include grid(1);
 
-	
+		@include resp-before('sm') {
+			@include grid(2, 36px);
+		}
+
+		@include resp-before('md') {
+			@include grid(3, 36px);
+		}
+	}
 }

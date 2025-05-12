@@ -1,0 +1,18 @@
+@use '../base/var' as *;
+
+
+dl.description-list {
+	font-size: 14px;
+	dt {
+		font-weight: $weight-extra;
+		font-family: $font-dewi-expanded;
+		line-height: 120%;
+	}
+
+	dd {
+		font-weight: $weight-normal;
+		text-transform: uppercase;
+		font-family: $font-inter;
+		line-height: 150%;
+	}
+}
