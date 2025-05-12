@@ -8,7 +8,7 @@ button.btn {
     font-family: $font-dewi-expanded;
     font-weight: $weight-extra;
     font-size: $text-base;
-    transition: .2s ease-in background;
+    transition: $transition-base background;
     color: $black-900;
 
     @media screen and (min-width: 1200px) {

@@ -9,7 +9,7 @@
     aspect-ratio: 1/1;
     border-radius: $rounded-base;
     object-fit: cover;
-    transition: 0.2s ease-in transform;
+    transition: $transition-base transform;
 
     &:hover {
       transform: scale(1.05);
