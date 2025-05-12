@@ -219,6 +219,9 @@ input[type=file] {
     align-items: center;
     gap: 50px;
   }
+  .footer_content * {
+    text-align: start;
+  }
   .footer_content .footer_content_logo {
     grid-column: 2/3;
     grid-row: 1/2;

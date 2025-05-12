@@ -35,6 +35,10 @@
 			align-items: center;
 			gap: 50px;
 
+			* {
+				text-align: start;
+			}
+
 			#{$content}_logo {
 				grid-column: 2/3;
 				grid-row: 1/2;
