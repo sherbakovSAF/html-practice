@@ -10,8 +10,7 @@
     width: 90px;
     aspect-ratio: 1/1;
     position: relative;
-    // TODO: Вынести переменную, если надо
-    background: #222222;
+    background: $black-700;
     border-radius: $rounded-full;
     display: flex;
     align-items: center;
@@ -23,7 +22,7 @@
     &:hover{
       background: $white;
       svg{
-        fill: #222222;
+        fill: $black-700;
       }
     }
 

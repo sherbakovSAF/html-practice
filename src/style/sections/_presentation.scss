@@ -5,7 +5,7 @@
 	position: relative;
 	height: 260px;
 	// TODO: Вынос с переменную
-	border-radius: 15px;
+	border-radius: $rounded-3xl;
 	background: url(../../../assets/media/img/video-bg.jpg) no-repeat center;
 	background-size: cover;
 	display: flex;
@@ -51,9 +51,7 @@
 
 	&_play-btn {
 		position: relative;
-		
 		aspect-ratio: 1/1;
-		// TODO: Добавить перменную
 		background: rgba($white, .2);
 		width: 80px;
 		border-radius: $rounded-full;

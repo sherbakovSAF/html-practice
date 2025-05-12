@@ -3,9 +3,8 @@
 @use '../utils/responsive' as *;
 
 .retail {
-	// TODO: Вынести в переменные, возможно
-	background-color: #E6E6E6;
-	border-radius: 15px;
+	background-color: $grey-400;
+	border-radius: $rounded-3xl;
 	overflow: hidden;
 	margin-top: 155px;
 

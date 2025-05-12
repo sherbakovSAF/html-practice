@@ -1,18 +1,15 @@
 @use '../base/var' as *;
 
 button.btn {
-    // TODO: Вынести в переменную, возможно
     width: fit-content;
-    background: #F4DF74;
-    border-radius: 10px;
+    background: $yellow-300;
+    border-radius: $rounded-xl;
     padding: 19px 20px;
     font-family: $font-dewi-expanded;
     font-weight: $weight-extra;
     font-size: $text-base;
-    
     transition: .2s ease-in background;
-    // TODO: Вынести в переменную, возможно
-    color: black;
+    color: $black-900;
 
     @media screen and (min-width: 1200px) {
         padding: 22px 36px;
@@ -20,7 +17,6 @@ button.btn {
     }
 
     &:hover {
-        background: #f5e69a;
-
+        background: $yellow-200;
     }
 }
