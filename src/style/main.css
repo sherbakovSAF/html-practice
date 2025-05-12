@@ -129,7 +129,7 @@ input[type=file] {
 
 .header {
   height: 700px;
-  background: url(../../../assets//media/img/header-bg.jpg) center no-repeat;
+  background: url(../../../assets/media/img/header-bg.jpg) center no-repeat;
   background-size: cover;
   color: #ffffff;
   font-family: "RFDewi", sans-serif;
