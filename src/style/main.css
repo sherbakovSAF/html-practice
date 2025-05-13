@@ -128,7 +128,7 @@ input[type=file] {
 
 .header {
   height: 700px;
-  background: url(../../../assets/media/img/header-bg.jpg) center no-repeat;
+  background: url(../../assets/media/img/header-bg.jpg) center no-repeat;
   background-size: cover;
   color: #ffffff;
   font-family: "RFDewi", sans-serif;
@@ -308,7 +308,7 @@ input[type=file] {
   position: relative;
   height: 260px;
   border-radius: 15px;
-  background: url(../../../assets/media/img/video-bg.jpg) no-repeat center;
+  background: url(../../assets/media/img/video-bg.jpg) no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -782,7 +782,7 @@ button.btn {
     font-size: 16px;
   }
 }
-button.btn:hover {
+button.btn:hover, button.btn:focus {
   background: #f5e69a;
 }
 

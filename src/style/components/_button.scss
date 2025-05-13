@@ -16,7 +16,7 @@ button.btn {
     font-size: $text-base;
   }
 
-  &:hover {
+  &:hover,  &:focus {
     background: $yellow-200;
   }
 }
